@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSK · Soluciones Informáticas &amp; Branding</title>
+    <meta name="description" content="Soluciones informáticas, desarrollo web y branding profesional. Freelance con enfoque moderno." />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" role="banner">
+        <div class="container header__inner">
+
+            <!-- Logo NSK -->
+            <a href="#" class="logo" aria-label="NSK Inicio">
+                <img src="assets/svg/logo-nsk.svg" alt="Logo NSK" width="48" height="48" class="logo__svg" />
+                <span class="logo__text">NSK</span>
+            </a>
+
+            <!-- Navegación principal -->
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a href="#soluciones">Soluciones</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Controles -->
+            <div class="header__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro/oscuro">
+                    <img src="assets/svg/theme-toggle.svg" alt="Cambiar tema" width="24" height="24" />
+                </button>
+                <a href="#contacto" class="btn btn--primary btn--small">Hablemos</a>
+            </div>
+
+            <!-- Hamburguesa -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <!-- Menú móvil -->
+        <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menú móvil">
+            <ul>
+                <li><a href="#soluciones" class="mobile-menu__link">Soluciones</a></li>
+                <li><a href="#servicios" class="mobile-menu__link">Servicios</a></li>
+                <li><a href="#contacto" class="mobile-menu__link">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <span class="hero__badge">🚀 Freelance · Profesional</span>
+                <h1 id="hero-title" class="hero__title">
+                    Soluciones <span class="highlight">informáticas</span><br />
+                    y <span class="highlight">branding</span> que impulsan tu negocio
+                </h1>
+                <p class="hero__desc">
+                    Desarrollo web, identidad de marca y asesoría tecnológica.
+                    Trabajo contigo para llevar tu proyecto al siguiente nivel.
+                </p>
+                <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary">Comienza tu proyecto</a>
+                    <a href="#soluciones" class="btn btn--ghost">Conoce más ↓</a>
+                </div>
+            </div>
+            <div class="hero__visual" aria-hidden="true">
+                <img src="assets/svg/hero-decorative.svg" alt="" width="400" height="400" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOLUCIONES ========== -->
+    <section class="section" id="soluciones" aria-labelledby="soluciones-title">
+        <div class="container">
+            <div class="section__header">
+                <h2 id="soluciones-title">Qué ofrezco</h2>
+                <p>Servicios integrales para tu presencia digital y marca</p>
+            </div>
+            <div class="grid grid--3">
+                <article class="card">
+                    <div class="card__icon">
+                        <img src="assets/svg/icon-dev.svg" alt="" width="48" height="48" />
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios y aplicaciones modernas, rápidas y con la mejor experiencia de usuario.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card__icon">
+                        <img src="assets/svg/icon-branding.svg" alt="" width="48" height="48" />
+                    </div>
+                    <h3>Branding</h3>
+                    <p>Identidad visual, naming, paletas y estrategia de marca para destacar.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card__icon">
+                        <img src="assets/svg/icon-solutions.svg" alt="" width="48" height="48" />
+                    </div>
+                    <h3>Soluciones IT</h3>
+                    <p>Consultoría, optimización de procesos y soporte técnico especializado.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICIOS ========== -->
+    <section class="section section--alt" id="servicios" aria-labelledby="servicios-title">
+        <div class="container">
+            <div class="section__header">
+                <h2 id="servicios-title">Cómo trabajo</h2>
+                <p>Un proceso claro y colaborativo</p>
+            </div>
+            <div class="grid grid--3">
+                <div class="step">
+                    <span class="step__number">01</span>
+                    <h3>Descubrimiento</h3>
+                    <p>Entiendo tu negocio, objetivos y público para alinear la estrategia.</p>
+                </div>
+                <div class="step">
+                    <span class="step__number">02</span>
+                    <h3>Diseño &amp; desarrollo</h3>
+                    <p>Prototipos, iteración y código limpio con foco en UX/UI.</p>
+                </div>
+                <div class="step">
+                    <span class="step__number">03</span>
+                    <h3>Lanzamiento &amp; soporte</h3>
+                    <p>Entrega, capacitación y acompañamiento post-lanzamiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+        <div class="container">
+            <div class="section__header">
+                <h2 id="contacto-title">¿Empezamos?</h2>
+                <p>Cuéntame tu idea y la haremos realidad</p>
+            </div>
+            <div class="contact-grid">
+                <form class="contact-form" netlify>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo</label>
+                        <input type="email" id="email" name="email" required placeholder="tú@ejemplo.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="¿En qué puedo ayudarte?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+                </form>
+                <div class="contact-info" aria-hidden="true">
+                    <img src="assets/svg/contact-decorative.svg" alt="" width="200" height="200" />
+                    <p class="contact-info__text">
+                        <strong>¿Prefieres un café virtual?</strong><br />
+                        Escríbeme y conversemos sin compromiso.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="#" class="logo" aria-label="NSK Inicio">
+                    <img src="assets/svg/logo-nsk.svg" alt="Logo NSK" width="32" height="32" class="logo__svg" />
+                    <span class="logo__text">NSK</span>
+                </a>
+                <p class="footer__copy">&copy; 2026 · Soluciones informáticas &amp; branding</p>
+            </div>
+            <nav class="footer__nav" aria-label="Enlaces del pie">
+                <a href="#soluciones">Soluciones</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
