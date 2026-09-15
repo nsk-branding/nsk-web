@@ -1,192 +1,414 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NSK · Soluciones Informáticas &amp; Branding</title>
-    <meta name="description" content="Soluciones informáticas, desarrollo web y branding profesional. Freelance con enfoque moderno." />
-    <link rel="stylesheet" href="/css/styles.css" />
+
+    <title>NSK · Estudio digital | Desarrollo web, branding y soluciones IT</title>
+    <meta name="description" content="Estudio digital en Uruguay. Diseñamos, construimos y hacemos crecer la presencia digital de tu empresa. Desarrollo web, branding y soluciones IT." />
+    <meta name="keywords" content="estudio digital, desarrollo web Uruguay, branding, diseño web, soluciones IT, NSK" />
+    <meta name="author" content="NSK Estudio Digital" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="NSK · Estudio digital" />
+    <meta property="og:description" content="Diseñamos, construimos y hacemos crecer tu presencia digital." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_UY" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/svg/logo-nsk.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-    <!-- ========== HEADER ========== -->
-    <header class="header" role="banner">
+    <header class="header" id="header">
         <div class="container header__inner">
 
-            <!-- Logo NSK -->
-            <a href="#" class="logo" aria-label="NSK Inicio">
-                <img src="assets/svg/logo-nsk.svg" alt="Logo NSK" width="48" height="48" class="logo__svg" />
-                <span class="logo__text">NSK</span>
+            <a href="#inicio" class="logo" aria-label="NSK Inicio">
+                <span class="logo__mark">NSK</span>
             </a>
 
-            <!-- Navegación principal -->
             <nav class="nav" aria-label="Navegación principal">
                 <ul class="nav__list">
-                    <li><a href="#soluciones">Soluciones</a></li>
                     <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
 
-            <!-- Controles -->
             <div class="header__actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema claro/oscuro">
-                    <img src="assets/svg/theme-toggle.svg" alt="Cambiar tema" width="24" height="24" />
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
                 </button>
                 <a href="#contacto" class="btn btn--primary btn--small">Hablemos</a>
             </div>
 
-            <!-- Hamburguesa -->
             <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
 
-        <!-- Menú móvil -->
-        <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menú móvil">
+        <div class="mobile-menu" id="mobileMenu">
             <ul>
-                <li><a href="#soluciones" class="mobile-menu__link">Soluciones</a></li>
                 <li><a href="#servicios" class="mobile-menu__link">Servicios</a></li>
+                <li><a href="#proyectos" class="mobile-menu__link">Proyectos</a></li>
+                <li><a href="#proceso" class="mobile-menu__link">Proceso</a></li>
                 <li><a href="#contacto" class="mobile-menu__link">Contacto</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- ========== HERO ========== -->
-    <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero__inner">
-            <div class="hero__content">
-                <span class="hero__badge">🚀 Freelance · Profesional</span>
-                <h1 id="hero-title" class="hero__title">
-                    Soluciones <span class="highlight">informáticas</span><br />
-                    y <span class="highlight">branding</span> que impulsan tu negocio
+    <main>
+
+        <section class="hero" id="inicio">
+            <div class="container hero__inner">
+                <span class="hero__badge" data-animate>NSK · Estudio digital</span>
+                <h1 class="hero__title" data-animate>
+                    Diseñamos, construimos<br />
+                    y hacemos <em>crecer</em><br />
+                    tu presencia digital.
                 </h1>
-                <p class="hero__desc">
-                    Desarrollo web, identidad de marca y asesoría tecnológica.
-                    Trabajo contigo para llevar tu proyecto al siguiente nivel.
+                <p class="hero__desc" data-animate>
+                    Desarrollo web, branding y soluciones IT para empresas que quieren destacar de verdad.
                 </p>
-                <div class="hero__actions">
-                    <a href="#contacto" class="btn btn--primary">Comienza tu proyecto</a>
-                    <a href="#soluciones" class="btn btn--ghost">Conoce más ↓</a>
+                <div class="hero__actions" data-animate>
+                    <a href="#contacto" class="btn btn--primary btn--lg">Empezar un proyecto</a>
+                    <a href="#proyectos" class="btn btn--ghost btn--lg">Ver proyectos</a>
                 </div>
             </div>
-            <div class="hero__visual" aria-hidden="true">
-                <img src="assets/svg/hero-decorative.svg" alt="" width="400" height="400" />
+            <div class="hero__scroll-hint" aria-hidden="true">
+                <span></span>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== SOLUCIONES ========== -->
-    <section class="section" id="soluciones" aria-labelledby="soluciones-title">
-        <div class="container">
-            <div class="section__header">
-                <h2 id="soluciones-title">Qué ofrezco</h2>
-                <p>Servicios integrales para tu presencia digital y marca</p>
+        <section class="section section--problem">
+            <div class="container">
+                <h2 class="section__title" data-animate>Decime si algo de esto te suena</h2>
+                <ul class="problem-list">
+                    <li data-animate>Tenés una web pero no te trae clientes.</li>
+                    <li data-animate>Tu marca se ve igual que la de tu competencia.</li>
+                    <li data-animate>Perdés horas en cosas técnicas que no son tu negocio.</li>
+                    <li data-animate>No sabés por dónde empezar con lo digital.</li>
+                </ul>
+                <p class="problem-close" data-animate>
+                    No se arregla con una web más linda.<br />
+                    <strong>Se arregla con estrategia, diseño y tecnología.</strong>
+                </p>
             </div>
-            <div class="grid grid--3">
-                <article class="card">
-                    <div class="card__icon">
-                        <img src="assets/svg/icon-dev.svg" alt="" width="48" height="48" />
+        </section>
+
+        <section class="section" id="servicios">
+            <div class="container">
+                <div class="section__header" data-animate>
+                    <span class="section__eyebrow">Servicios</span>
+                    <h2 class="section__title">Lo que hacemos</h2>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service" data-animate>
+                        <span class="service__number">01</span>
+                        <h3 class="service__title">Desarrollo Web</h3>
+                        <p class="service__desc">
+                            Sitios rápidos, modernos y pensados para convertir. Sin plantillas genéricas, sin plugins que se rompen.
+                        </p>
+                    </article>
+
+                    <article class="service" data-animate>
+                        <span class="service__number">02</span>
+                        <h3 class="service__title">Branding</h3>
+                        <p class="service__desc">
+                            Identidad visual que hace que te recuerden. Logo, paleta, tipografía y todo lo que tu marca necesita.
+                        </p>
+                    </article>
+
+                    <article class="service" data-animate>
+                        <span class="service__number">03</span>
+                        <h3 class="service__title">Soluciones IT</h3>
+                        <p class="service__desc">
+                            Consultoría, automatización y soporte. Para que la tecnología trabaje para vos, no al revés.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt" id="proyectos">
+            <div class="container">
+                <div class="section__header" data-animate>
+                    <span class="section__eyebrow">Proyectos</span>
+                    <h2 class="section__title">Trabajo hecho, no promesas.</h2>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project" data-animate>
+                        <div class="browser">
+                            <div class="browser__bar">
+                                <span class="browser__dot"></span>
+                                <span class="browser__dot"></span>
+                                <span class="browser__dot"></span>
+                                <span class="browser__url">hidroreparaciones.com</span>
+                            </div>
+                            <div class="browser__viewport">
+                                <div class="mini mini--hidro">
+                                    <div class="mini__nav">
+                                        <span class="mini__logo">Hidro</span>
+                                        <span class="mini__links"><i></i><i></i><i></i></span>
+                                        <span class="mini__btn">Llamar</span>
+                                    </div>
+                                    <div class="mini__hero">
+                                        <h4>Servicios Sanitarios Integrales</h4>
+                                        <p>Atención rápida · Facturamos</p>
+                                        <span class="mini__cta">Solicitar Presupuesto</span>
+                                    </div>
+                                    <div class="mini__cards">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__info">
+                            <h3>Hidro Reparaciones</h3>
+                            <span>Servicios sanitarios · Montevideo</span>
+                        </div>
+                    </article>
+
+                    <article class="project" data-animate>
+                        <div class="browser">
+                            <div class="browser__bar">
+                                <span class="browser__dot"></span>
+                                <span class="browser__dot"></span>
+                                <span class="browser__dot"></span>
+                                <span class="browser__url">alturacafe.uy</span>
+                            </div>
+                            <div class="browser__viewport">
+                                <div class="mini mini--altura">
+                                    <div class="mini__nav">
+                                        <span class="mini__logo">Altura</span>
+                                        <span class="mini__links"><i></i><i></i><i></i></span>
+                                        <span class="mini__btn">Reservar</span>
+                                    </div>
+                                    <div class="mini__hero">
+                                        <h4>Café de especialidad</h4>
+                                        <p>Tostado en Montevideo</p>
+                                        <span class="mini__cta">Ver menú</span>
+                                    </div>
+                                    <div class="mini__cards">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__info">
+                            <h3>Altura Café</h3>
+                            <span>Cafetería de especialidad · Montevideo</span>
+                        </div>
+                    </article>
+
+                    <article class="project" data-animate>
+                        <div class="browser">
+                            <div class="browser__bar">
+                                <span class="browser__dot"></span>
+                                <span class="browser__dot"></span>
+                                <span class="browser__dot"></span>
+                                <span class="browser__url">verticestudio.com</span>
+                            </div>
+                            <div class="browser__viewport">
+                                <div class="mini mini--vertice">
+                                    <div class="mini__nav">
+                                        <span class="mini__logo">VÉRTICE</span>
+                                        <span class="mini__links"><i></i><i></i><i></i></span>
+                                        <span class="mini__btn">Contacto</span>
+                                    </div>
+                                    <div class="mini__hero">
+                                        <h4>Arquitectura<br />contemporánea</h4>
+                                        <p>Proyectos residenciales</p>
+                                        <span class="mini__cta">Ver obras</span>
+                                    </div>
+                                    <div class="mini__cards">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__info">
+                            <h3>Vértice Studio</h3>
+                            <span>Estudio de arquitectura · Punta del Este</span>
+                        </div>
+                    </article>
+
+                    <article class="project" data-animate>
+                        <div class="browser">
+                            <div class="browser__bar">
+                                <span class="browser__dot"></span>
+                                <span class="browser__dot"></span>
+                                <span class="browser__dot"></span>
+                                <span class="browser__url">raizverde.uy</span>
+                            </div>
+                            <div class="browser__viewport">
+                                <div class="mini mini--raiz">
+                                    <div class="mini__nav">
+                                        <span class="mini__logo">Raíz Verde</span>
+                                        <span class="mini__links"><i></i><i></i><i></i></span>
+                                        <span class="mini__btn">Tienda</span>
+                                    </div>
+                                    <div class="mini__hero">
+                                        <h4>Plantas que<br />transforman espacios</h4>
+                                        <p>Vivero urbano</p>
+                                        <span class="mini__cta">Explorar</span>
+                                    </div>
+                                    <div class="mini__cards">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__info">
+                            <h3>Raíz Verde</h3>
+                            <span>Vivero urbano · Canelones</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="proceso">
+            <div class="container">
+                <div class="section__header" data-animate>
+                    <span class="section__eyebrow">Proceso</span>
+                    <h2 class="section__title">Cómo trabajamos</h2>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-step" data-animate>
+                        <span class="process-step__number">01</span>
+                        <h3>Relevamiento</h3>
+                        <p>Una llamada para entender qué vendés, a quién y qué necesitás.</p>
                     </div>
-                    <h3>Desarrollo Web</h3>
-                    <p>Sitios y aplicaciones modernas, rápidas y con la mejor experiencia de usuario.</p>
-                </article>
-
-                <article class="card">
-                    <div class="card__icon">
-                        <img src="assets/svg/icon-branding.svg" alt="" width="48" height="48" />
+                    <div class="process-step" data-animate>
+                        <span class="process-step__number">02</span>
+                        <h3>Diseño</h3>
+                        <p>Prototipos visuales con foco en UX/UI y en tu identidad de marca.</p>
                     </div>
-                    <h3>Branding</h3>
-                    <p>Identidad visual, naming, paletas y estrategia de marca para destacar.</p>
-                </article>
-
-                <article class="card">
-                    <div class="card__icon">
-                        <img src="assets/svg/icon-solutions.svg" alt="" width="48" height="48" />
+                    <div class="process-step" data-animate>
+                        <span class="process-step__number">03</span>
+                        <h3>Desarrollo</h3>
+                        <p>Código limpio, rápido y optimizado. Sin dependencias innecesarias.</p>
                     </div>
-                    <h3>Soluciones IT</h3>
-                    <p>Consultoría, optimización de procesos y soporte técnico especializado.</p>
-                </article>
+                    <div class="process-step" data-animate>
+                        <span class="process-step__number">04</span>
+                        <h3>Lanzamiento</h3>
+                        <p>Publicación, capacitación y acompañamiento post-lanzamiento.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== SERVICIOS ========== -->
-    <section class="section section--alt" id="servicios" aria-labelledby="servicios-title">
-        <div class="container">
-            <div class="section__header">
-                <h2 id="servicios-title">Cómo trabajo</h2>
-                <p>Un proceso claro y colaborativo</p>
-            </div>
-            <div class="grid grid--3">
-                <div class="step">
-                    <span class="step__number">01</span>
-                    <h3>Descubrimiento</h3>
-                    <p>Entiendo tu negocio, objetivos y público para alinear la estrategia.</p>
+        <section class="section section--alt">
+            <div class="container">
+                <div class="section__header" data-animate>
+                    <span class="section__eyebrow">Testimonios</span>
+                    <h2 class="section__title">Lo que dicen de nosotros</h2>
                 </div>
-                <div class="step">
-                    <span class="step__number">02</span>
-                    <h3>Diseño &amp; desarrollo</h3>
-                    <p>Prototipos, iteración y código limpio con foco en UX/UI.</p>
-                </div>
-                <div class="step">
-                    <span class="step__number">03</span>
-                    <h3>Lanzamiento &amp; soporte</h3>
-                    <p>Entrega, capacitación y acompañamiento post-lanzamiento.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ========== CONTACTO ========== -->
-    <section class="section" id="contacto" aria-labelledby="contacto-title">
-        <div class="container">
-            <div class="section__header">
-                <h2 id="contacto-title">¿Empezamos?</h2>
-                <p>Cuéntame tu idea y la haremos realidad</p>
+                <div class="testimonials">
+                    <blockquote class="testimonial" data-animate>
+                        <p>«Trabajar con NSK nos permitió tener una web que por fin representa lo que hacemos. Rápido, profesional y con muy buen gusto.»</p>
+                        <footer>
+                            <strong>Cliente NSK</strong>
+                            <span>Montevideo</span>
+                        </footer>
+                    </blockquote>
+                </div>
             </div>
-            <div class="contact-grid">
-                <form class="contact-form" netlify>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section__header" data-animate>
+                    <span class="section__eyebrow">FAQ</span>
+                    <h2 class="section__title">Preguntas frecuentes</h2>
+                </div>
+
+                <div class="faq">
+                    <details class="faq__item" data-animate>
+                        <summary>¿Cuánto sale un proyecto?</summary>
+                        <p>Depende del alcance real: cantidad de secciones, si hay catálogo, si hay que migrar contenido. En la primera llamada lo definimos y te pasamos una propuesta cerrada.</p>
+                    </details>
+                    <details class="faq__item" data-animate>
+                        <summary>¿Cuánto tarda?</summary>
+                        <p>Un sitio simple puede estar en 2-3 semanas. Proyectos más complejos, entre 4 y 8 semanas. Te damos un plazo concreto en la propuesta.</p>
+                    </details>
+                    <details class="faq__item" data-animate>
+                        <summary>¿Puedo administrarlo yo mismo?</summary>
+                        <p>Sí. Te entregamos el sitio con un panel pensado para tu equipo. Cambiar textos, precios o imágenes sin tocar código.</p>
+                    </details>
+                    <details class="faq__item" data-animate>
+                        <summary>¿Quedo atado a ustedes?</summary>
+                        <p>No. El sitio es tuyo y tu equipo queda sabiendo operarlo. El mantenimiento es un servicio aparte que contratás si querés.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--contact" id="contacto">
+            <div class="container">
+                <div class="section__header" data-animate>
+                    <span class="section__eyebrow">Contacto</span>
+                    <h2 class="section__title">Contanos qué necesitás.</h2>
+                    <p class="section__subtitle">Te respondemos dentro de las 24 horas hábiles.</p>
+                </div>
+
+                <form
+                    class="contact-form"
+                    id="contactForm"
+                    action="https://formspree.io/f/moevajzw"
+                    method="POST"
+                    data-animate
+                >
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
                     </div>
                     <div class="form-group">
-                        <label for="email">Correo</label>
-                        <input type="email" id="email" name="email" required placeholder="tú@ejemplo.com" />
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@empresa.com" />
                     </div>
                     <div class="form-group">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="¿En qué puedo ayudarte?"></textarea>
+                        <label for="mensaje">Contanos tu proyecto</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="¿Qué necesitás? ¿Para cuándo?"></textarea>
                     </div>
-                    <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
-                </form>
-                <div class="contact-info" aria-hidden="true">
-                    <img src="assets/svg/contact-decorative.svg" alt="" width="200" height="200" />
-                    <p class="contact-info__text">
-                        <strong>¿Prefieres un café virtual?</strong><br />
-                        Escríbeme y conversemos sin compromiso.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer" role="contentinfo">
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">Enviar mensaje</button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
         <div class="container footer__inner">
             <div class="footer__brand">
-                <a href="#" class="logo" aria-label="NSK Inicio">
-                    <img src="assets/svg/logo-nsk.svg" alt="Logo NSK" width="32" height="32" class="logo__svg" />
-                    <span class="logo__text">NSK</span>
-                </a>
-                <p class="footer__copy">&copy; 2026 · Soluciones informáticas &amp; branding</p>
+                <span class="logo__mark">NSK</span>
+                <p class="footer__tagline">Estudio digital · Montevideo, Uruguay</p>
             </div>
             <nav class="footer__nav" aria-label="Enlaces del pie">
-                <a href="#soluciones">Soluciones</a>
                 <a href="#servicios">Servicios</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#proceso">Proceso</a>
                 <a href="#contacto">Contacto</a>
             </nav>
+            <p class="footer__copy">&copy; 2026 NSK. Todos los derechos reservados.</p>
         </div>
     </footer>
 
