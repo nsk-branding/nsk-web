@@ -19,6 +19,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css" />
@@ -149,7 +150,11 @@
 
                 <div class="projects-grid">
 
-                    <article class="project" data-animate>
+                    <!-- ============================================ -->
+                    <!-- PROYECTO 1: HIDRO REPARACIONES              -->
+                    <!-- Estructura: Marco de navegador              -->
+                    <!-- ============================================ -->
+                    <article class="project project--browser" data-animate>
                         <div class="browser">
                             <div class="browser__bar">
                                 <span class="browser__dot"></span>
@@ -181,62 +186,62 @@
                         </div>
                     </article>
 
-                    <article class="project" data-animate>
-                        <div class="browser">
-                            <div class="browser__bar">
-                                <span class="browser__dot"></span>
-                                <span class="browser__dot"></span>
-                                <span class="browser__dot"></span>
-                                <span class="browser__url">alturacafe.uy</span>
-                            </div>
-                            <div class="browser__viewport">
-                                <div class="mini mini--altura">
-                                    <div class="mini__nav">
-                                        <span class="mini__logo">Altura</span>
-                                        <span class="mini__links"><i></i><i></i><i></i></span>
-                                        <span class="mini__btn">Reservar</span>
+                    <!-- ============================================ -->
+                    <!-- PROYECTO 2: ALTURA CAFÉ                     -->
+                    <!-- Estructura: Mockup de celular + texto       -->
+                    <!-- ============================================ -->
+                    <article class="project project--phone" data-animate>
+                        <div class="phone-layout">
+                            <div class="phone">
+                                <div class="phone__notch"></div>
+                                <div class="phone__screen">
+                                    <div class="phone__header">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80"
+                                            alt="Café de especialidad"
+                                            loading="lazy"
+                                        />
+                                        <div class="phone__overlay"></div>
+                                        <span class="phone__logo">ALTURA</span>
                                     </div>
-                                    <div class="mini__hero">
-                                        <h4>Café de especialidad</h4>
+                                    <div class="phone__content">
+                                        <h5>Café de especialidad</h5>
                                         <p>Tostado en Montevideo</p>
-                                        <span class="mini__cta">Ver menú</span>
-                                    </div>
-                                    <div class="mini__cards">
-                                        <span></span><span></span><span></span>
+                                        <span class="phone__cta">Ver menú</span>
+                                        <div class="phone__cards">
+                                            <span></span><span></span><span></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="project__info">
-                            <h3>Altura Café</h3>
-                            <span>Cafetería de especialidad · Montevideo</span>
+                            <div class="project__details">
+                                <h3>Altura Café</h3>
+                                <span class="project__category">Cafetería de especialidad · Montevideo</span>
+                                <ul class="project__features">
+                                    <li>Sitio mobile-first</li>
+                                    <li>Menú digital y reservas</li>
+                                    <li>Integración con Instagram</li>
+                                </ul>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="project" data-animate>
-                        <div class="browser">
-                            <div class="browser__bar">
-                                <span class="browser__dot"></span>
-                                <span class="browser__dot"></span>
-                                <span class="browser__dot"></span>
-                                <span class="browser__url">verticestudio.com</span>
-                            </div>
-                            <div class="browser__viewport">
-                                <div class="mini mini--vertice">
-                                    <div class="mini__nav">
-                                        <span class="mini__logo">VÉRTICE</span>
-                                        <span class="mini__links"><i></i><i></i><i></i></span>
-                                        <span class="mini__btn">Contacto</span>
-                                    </div>
-                                    <div class="mini__hero">
-                                        <h4>Arquitectura<br />contemporánea</h4>
-                                        <p>Proyectos residenciales</p>
-                                        <span class="mini__cta">Ver obras</span>
-                                    </div>
-                                    <div class="mini__cards">
-                                        <span></span><span></span><span></span>
-                                    </div>
-                                </div>
+                    <!-- ============================================ -->
+                    <!-- PROYECTO 3: VÉRTICE STUDIO                  -->
+                    <!-- Estructura: Hero full + texto superpuesto   -->
+                    <!-- ============================================ -->
+                    <article class="project project--hero-full" data-animate>
+                        <div class="hero-full">
+                            <img
+                                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=80"
+                                alt="Arquitectura contemporánea"
+                                loading="lazy"
+                            />
+                            <div class="hero-full__overlay"></div>
+                            <div class="hero-full__content">
+                                <span class="hero-full__logo">VÉRTICE</span>
+                                <h4>Arquitectura<br />contemporánea</h4>
+                                <span class="hero-full__cta">Ver obras</span>
                             </div>
                         </div>
                         <div class="project__info">
@@ -245,29 +250,34 @@
                         </div>
                     </article>
 
-                    <article class="project" data-animate>
-                        <div class="browser">
-                            <div class="browser__bar">
-                                <span class="browser__dot"></span>
-                                <span class="browser__dot"></span>
-                                <span class="browser__dot"></span>
-                                <span class="browser__url">raizverde.uy</span>
+                    <!-- ============================================ -->
+                    <!-- PROYECTO 4: RAÍZ VERDE                      -->
+                    <!-- Estructura: Card flotante tipo tienda       -->
+                    <!-- ============================================ -->
+                    <article class="project project--shop" data-animate>
+                        <div class="shop">
+                            <div class="shop__header">
+                                <img
+                                    src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&q=80"
+                                    alt="Vivero urbano"
+                                    loading="lazy"
+                                />
+                                <div class="shop__overlay"></div>
+                                <span class="shop__logo">RAÍZ VERDE</span>
+                                <span class="shop__badge">Vivero urbano</span>
                             </div>
-                            <div class="browser__viewport">
-                                <div class="mini mini--raiz">
-                                    <div class="mini__nav">
-                                        <span class="mini__logo">Raíz Verde</span>
-                                        <span class="mini__links"><i></i><i></i><i></i></span>
-                                        <span class="mini__btn">Tienda</span>
-                                    </div>
-                                    <div class="mini__hero">
-                                        <h4>Plantas que<br />transforman espacios</h4>
-                                        <p>Vivero urbano</p>
-                                        <span class="mini__cta">Explorar</span>
-                                    </div>
-                                    <div class="mini__cards">
-                                        <span></span><span></span><span></span>
-                                    </div>
+                            <div class="shop__products">
+                                <div class="shop__product">
+                                    <span class="shop__icon">🌱</span>
+                                    <span class="shop__name">Interior</span>
+                                </div>
+                                <div class="shop__product">
+                                    <span class="shop__icon">🌿</span>
+                                    <span class="shop__name">Exterior</span>
+                                </div>
+                                <div class="shop__product">
+                                    <span class="shop__icon">🪴</span>
+                                    <span class="shop__name">Macetas</span>
                                 </div>
                             </div>
                         </div>
